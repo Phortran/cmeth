@@ -13,5 +13,8 @@ $ make <test_name>
 ```
 with the name of the unit test to be compiled.
 
+
 To **uninstall**, simply type
-`$ make uninstall`
+```bash
+$ make uninstall
+```
