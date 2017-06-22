@@ -1,7 +1,9 @@
-include ../makevars.mk
+include ../../makevars.mk
 
-FDA.o: FDA.f90
-	$(FC) $(FCFLAGS) -c $< -o $@
+FDA: FDA.f90
+	$(FC) $(FCFLAGS) -c $< -o $@.o
+	mv $@.o ../../$(builddir)
+	mv $(shell echo $@ | tr A-Z a-z).mod ../../$(moddir)
 
 .PHONY: clean
 
