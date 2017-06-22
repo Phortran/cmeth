@@ -4,7 +4,9 @@ Computational Methods project
 # Installation
 First, call
 
-`$ make install`
+```bash
+$ make install
+```
 
 to create all the directories needed for the building;
 then, call
