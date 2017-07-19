@@ -6,10 +6,11 @@
 #					 all -fstack-protector -assume protect_parens -implicitnone
 #
 #LDFLAGS = -mkl=sequential
-cordir = src/core
-incdir = src/include
-utsdir = src/utils
-tstdir = src/test
+srcdir = srcf
+cordir = $(srcdir)/core
+incdir = $(srcdir)/include
+utsdir = $(srcdir)/utils
+tstdir = $(srcdir)/test
 
 bindir := ./bin
 builddir := ./build
