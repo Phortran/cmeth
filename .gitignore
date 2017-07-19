@@ -27,3 +27,6 @@
 *.exe
 *.out
 *.bin
+
+#Linux config files
+.directory
